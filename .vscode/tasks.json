@@ -15,12 +15,12 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "build",
+      "script": "lint",
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": "$tsc"
+      "problemMatcher": "$eslint-stylish"
     },
 
 
@@ -30,8 +30,7 @@
       "group": {
         "kind": "test",
         "isDefault": true
-      },
-      "problemMatcher": "$tslint5"
+      }
     },
   ]
 }

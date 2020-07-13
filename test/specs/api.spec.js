@@ -1,33 +1,33 @@
 "use strict";
 
-const myLibrary = require("../../");
+const ________CONFIG__________ = require("../../");
 const { expect } = require("chai");
 
-describe("myLibrary() API", () => {
+describe("________CONFIG__________() API", () => {
 
   it("should work without any arguments", () => {
-    let result = myLibrary();
+    let result = ________CONFIG__________();
     expect(result).to.equal("Hello, world.");
   });
 
   it("should accept a custom greeting", () => {
-    let result = myLibrary({ greeting: "Hi there" });
+    let result = ________CONFIG__________({ greeting: "Hi there" });
     expect(result).to.equal("Hi there, world.");
   });
 
   it("should accept a custom subject", () => {
-    let result = myLibrary({ subject: "Michael" });
+    let result = ________CONFIG__________({ subject: "Michael" });
     expect(result).to.equal("Hello, Michael.");
   });
 
   it("should accept a custom greeting and subject", () => {
-    let result = myLibrary({ greeting: "Yo", subject: "man" });
+    let result = ________CONFIG__________({ greeting: "Yo", subject: "man" });
     expect(result).to.equal("Yo, man.");
   });
 
   it('should not allow a greeting of "goodbye"', () => {
     function sayGoodbye () {
-      myLibrary({ greeting: "Goodbye" });
+      ________CONFIG__________({ greeting: "Goodbye" });
     }
 
     expect(sayGoodbye).to.throw("Cannot say goodbye");
