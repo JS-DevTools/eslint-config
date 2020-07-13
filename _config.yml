@@ -1,0 +1,26 @@
+remote_theme: MyGitHubOrg/gh-pages-theme
+
+title: My Project Name
+logo: https://my-website.com/img/logos/logo.png
+
+author:
+  twitter: MyTwitterAccount
+
+google_analytics: UA-68102273-3
+
+twitter:
+  username: MyTwitterAccount
+  card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://my-website.com/img/logos/card.png
+  - scope:
+      path: "test/**/*"
+    values:
+      sitemap: false
+
+plugins:
+  - jekyll-sitemap
