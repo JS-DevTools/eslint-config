@@ -22,7 +22,7 @@
     "lib"
   ],
   "scripts": {
-    "clean": "shx rm -rf .nyc_output coverage lib",
+    "clean": "shx rm -rf .nyc_output coverage",
     "lint": "eslint lib test",
     "test": "mocha && npm run lint",
     "coverage": "nyc node_modules/mocha/bin/mocha",
@@ -37,11 +37,11 @@
     "@jsdevtools/eslint-config-modular": "^8.0.0",
     "@jsdevtools/version-bump-prompt": "^6.0.2",
     "@types/chai": "^4.1.7",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^13.9.0",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.23",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "mocha": "^7.1.0",
+    "eslint": "^7.4.0",
+    "mocha": "^8.0.1",
     "npm-check": "^5.9.0",
     "nyc": "^15.0.0",
     "shx": "^0.3.2",
@@ -49,8 +49,8 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^3.6.0",
-    "@typescript-eslint/eslint-plugin": "^3.6.0"
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1"
   },
   "peerDependencies": {
     "eslint": ">=7"
