@@ -2,8 +2,8 @@ ESLint Config
 ==============================================
 ### Opinionated JSDevTools ESLint config for JavaScript, TypeScript, and JSX
 
-[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/eslint-config/blob/master/.github/workflows/CI-CD.yaml)
-[![Build Status](https://github.com/JS-DevTools/eslint-config/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/eslint-config/blob/master/.github/workflows/CI-CD.yaml)
+[![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/eslint-config/actions)
+[![Build Status](https://github.com/JS-DevTools/eslint-config/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/eslint-config/actions)
 
 [![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/eslint-config)
 [![Dependencies](https://david-dm.org/JS-DevTools/eslint-config.svg)](https://david-dm.org/JS-DevTools/eslint-config)
@@ -13,66 +13,53 @@ ESLint Config
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/JS-DevTools/eslint-config)
 
 
+This is a [shareable config](https://eslint.org/docs/developer-guide/shareable-configs) for [ESLint](https://eslint.org/) that's used for [JSDevTools projects](https://jstools.dev).  It's highly opinionated and tailored to the types of projects we build, so it's probably not relevant to you.  But nonetheless, it could be a good starting point for creating your own custom shareable config.
 
-Features
---------------------------
-- Feature 1
-- Feature 2
-- Feature 3
+This config uses [ESLint's `overrides` feature](https://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns) to apply different rulesets to different files based on glob patterns.  It currently includes rulesets for JavaScript, TypeScript, and JSX files, as well more relaxed rulesets for test files in any of those languages.
 
 
 
-Example
---------------------------
+Related Projects
+-----------------------
+- [eslint-modular](https://jstools.dev/eslint-modular/)<br>
+  Modular ESLint configuration
 
-```javascript
-import ________CONFIG__________ from "@jsdevtools/eslint-config";
-
-// TODO: Add a usage example here
-```
+- [tslint-modular](https://jstools.dev/tslint-modular/)<br>
+  Modular TSLint configuration for TypeScript projects
 
 
 
 Installation
---------------------------
-You can install ESLint Config via [npm](https://docs.npmjs.com/about-npm/).
+-----------------------
+Run the following [npm](https://docs.npmjs.com/about-npm/) command to install [ESLint](https://eslint.org/) and our ESLint config as dev-dependencies of your project:
 
 ```bash
-npm install @jsdevtools/eslint-config
+npm install eslint @jsdevtools/eslint-config --save-dev
 ```
 
 
 
 Usage
---------------------------
-TODO: Document the library's API and CLI usage
+-----------------------
+Shareable configs are designed to work with the `extends` feature of `.eslintrc` files. You can learn more about
+[Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs) on the official ESLint website.
 
+To use our ESLint config in your project, create an `.eslintrc.yml` file with the following contents:
 
+**.eslintrc.yml**
+```yaml
+root: true
+extends: "@jsdevtools"
 
-Contributing
---------------------------
-Contributions, enhancements, and bug-fixes are welcome!  [File an issue](https://github.com/JS-DevTools/eslint-config/issues) on GitHub and [submit a pull request](https://github.com/JS-DevTools/eslint-config/pulls).
-
-#### Building
-To build the project locally on your computer:
-
-1. __Clone this repo__<br>
-`git clone https://github.com/JS-DevTools/eslint-config.git`
-
-2. __Install dependencies__<br>
-`npm install`
-
-3. __Build the code__<br>
-`npm run build`
-
-4. __Run the tests__<br>
-`npm test`
+rules:
+  # You can override any rules here
+```
 
 
 
 License
 --------------------------
-ESLint Config is 100% free and open-source, under the [MIT license](LICENSE). Use it however you want.
+Our ESLint config is 100% free and open-source, under the [MIT license](LICENSE). Use it however you want.
 
 This package is [Treeware](http://treeware.earth). If you use it in production, then we ask that you [**buy the world a tree**](https://plant.treeware.earth/JS-DevTools/eslint-config) to thank us for our work. By contributing to the Treeware forest you’ll be creating employment for local families and restoring wildlife habitats.
 
