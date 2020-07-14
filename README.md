@@ -21,7 +21,7 @@ This config uses [ESLint's `overrides` feature](https://eslint.org/docs/user-gui
 
 Related Projects
 -----------------------
-- [eslint-modular](https://jstools.dev/eslint-modular/)<br>
+- [eslint-config-modular](https://jstools.dev/eslint-config-modular/)<br>
   Modular ESLint configuration
 
 - [tslint-modular](https://jstools.dev/tslint-modular/)<br>
