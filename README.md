@@ -5,7 +5,7 @@ ESLint Config
 [![Cross-Platform Compatibility](https://jstools.dev/img/badges/os-badges.svg)](https://github.com/JS-DevTools/eslint-config/actions)
 [![Build Status](https://github.com/JS-DevTools/eslint-config/workflows/CI-CD/badge.svg)](https://github.com/JS-DevTools/eslint-config/actions)
 
-[![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/eslint-config)
+[![Coverage Status](https://coveralls.io/repos/github/JS-DevTools/eslint-config2/badge.svg?branch=master)](https://coveralls.io/github/JS-DevTools/eslint-config2)
 [![Dependencies](https://david-dm.org/JS-DevTools/eslint-config.svg)](https://david-dm.org/JS-DevTools/eslint-config)
 
 [![npm](https://img.shields.io/npm/v/@jsdevtools/eslint-config.svg)](https://www.npmjs.com/package/@jsdevtools/eslint-config)
