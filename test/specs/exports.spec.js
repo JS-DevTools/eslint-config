@@ -1,30 +1,22 @@
 "use strict";
 
 const commonJSExport = require("../../");
-const { default: defaultExport, ________CONFIG__________: namedExport } = require("../../");
+const { default: defaultExport } = require("../../");
 const { expect } = require("chai");
 
-describe("eslint-config package exports", () => {
+describe("ESLint Config", () => {
 
-  it("should export the ________CONFIG__________() function as the default CommonJS export", () => {
-    expect(commonJSExport).to.be.a("function");
-    expect(commonJSExport.name).to.equal("________CONFIG__________");
+  it("should export the ESLint config as the default CommonJS export", () => {
+    expect(commonJSExport).to.be.an("object");
   });
 
-  it("should export the ________CONFIG__________() function as the default ESM export", () => {
-    expect(defaultExport).to.be.a("function");
-    expect(defaultExport).to.equal(commonJSExport);
+  it("should not have a default ESM export", () => {
+    expect(defaultExport).to.equal(undefined);
   });
 
-  it("should export the ________CONFIG__________() function as a named export", () => {
-    expect(namedExport).to.be.a("function");
-    expect(namedExport).to.equal(commonJSExport);
-  });
-
-  it("should not export anything else", () => {
+  it("should only contain ESLint overrides", () => {
     expect(commonJSExport).to.have.same.keys(
-      "default",
-      "________CONFIG__________",
+      "overrides",
     );
   });
 
