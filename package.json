@@ -34,7 +34,6 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "@jsdevtools/eslint-config-modular": "^8.0.0",
     "@jsdevtools/version-bump-prompt": "^6.0.2",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^8.0.0",
