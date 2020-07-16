@@ -1,6 +1,6 @@
 {
   "name": "@jsdevtools/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Opinionated JSDevTools ESLint config for JavaScript, TypeScript, and JSX",
   "keywords": [
     "eslintconfig",
@@ -34,7 +34,7 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "@jsdevtools/version-bump-prompt": "^6.0.2",
+    "@jsdevtools/version-bump-prompt": "^6.0.5",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^8.0.0",
     "@types/node": "^14.0.23",
