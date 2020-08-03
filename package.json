@@ -1,6 +1,6 @@
 {
   "name": "@jsdevtools/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Opinionated JSDevTools ESLint config for JavaScript, TypeScript, and JSX",
   "keywords": [
     "eslintconfig",
